@@ -15,19 +15,15 @@ export default class extends AbstractView {
       
 
         return `
-        <section class="section-acceuil container">
+        <section class="section-acceuil">
             <div class="card">
-                <a href="/characters" data-link><h1>Personnages</h1></a>
+            <h1><a href="/characters" data-link >Personnages</a></h1>
                 <img src="./static/img/heros-avengers.jpg" alt="personnages Marvels">
             </div>
-            <div class="card">
-                <a href="/comics" data-link><h1>Bandes-dessinées</h1></a>              
-                <img src="./static/img/comics.jpg" alt="personnages Marvels">
-            </div>
+         
         </section>
         `;
     }
     
-        
-    
+
 }
