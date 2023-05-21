@@ -48,10 +48,12 @@ export default class extends AbstractView {
         return `<section class="flexBox">
                     <h2>${nom}</h2>
                     <p>${description}</p>
-                    <h3>Collection bande dessinées</h3>
-                    ${listComics}
-                    <h3>Collection bande films et séries</h3>
-                    ${listComicsMovies}
+                    <div class="flex-rox">
+                        <h3>Collection bande dessinées</h3>
+                        ${listComics}
+                        <h3>Collection films et séries</h3>
+                        ${listComicsMovies}
+                    </div>
                 </section>`;
     }
 }
