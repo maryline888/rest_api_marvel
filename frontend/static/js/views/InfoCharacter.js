@@ -25,13 +25,13 @@ export default class extends AbstractView {
         const data =  jsonData.data.results;
         // console.log('data', data);
         let personnage = data.find(element => element.id === cleanId)
-        console.log('personnage', personnage);
+
         // let description = element.description;
        let nom = personnage.name;
        let description = personnage.description;
        let comics = personnage.comics.items;
        let series = personnage.series.items;
-        // console.log(personnage.comics);
+
         let listComics = "<ul>"
         for (let i in comics) {
             listComics += `<li>${comics[i]['name']}</li>`;
