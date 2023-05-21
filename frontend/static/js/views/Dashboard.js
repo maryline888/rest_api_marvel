@@ -12,24 +12,20 @@ export default class extends AbstractView {
             const response = await fetch(url)
             return response.json()
         }
-        
-        const jsonData = await getData('/static/js/views/marvel.json');
-        
-        const data =  jsonData.data.results;
-        
-        let htmlElements = [];
-    
-        data.forEach(element => {
-            let name = element.name;
-            let description = element.description;
-            let path = element.thumbnail.path;
-            let ext = element.thumbnail.extension
-            let image = path + "." + ext;
-            
-            htmlElements.push(`<div class="card"><h4>${name}</h4><img src="${image}"/><p>${description}</p></div>`);
-        });
-        htmlElements =  htmlElements.join('');
-        return `<section class="container"> ${htmlElements}</section>`;
+      
+
+        return `
+        <section class="section-acceuil container">
+            <div class="card">
+                <a href="/characters" data-link><h1>Personnages</h1></a>
+                <img src="./static/img/heros-avengers.jpg" alt="personnages Marvels">
+            </div>
+            <div class="card">
+                <a href="/comics" data-link><h1>Bandes-dessinées</h1></a>              
+                <img src="./static/img/comics.jpg" alt="personnages Marvels">
+            </div>
+        </section>
+        `;
     }
     
         

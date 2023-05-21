@@ -1,4 +1,6 @@
 import Dashboard from "./views/Dashboard.js"
+import CharactersView from "./views/charactersView.js"
+
 
 
 
@@ -24,7 +26,8 @@ const router = async () => {
     //10.1 test regex
     //console.log(pathToRegex("/post-view/:id"))
     const routes = [
-        {path: "/", view: Dashboard}
+        {path: "/", view: Dashboard},
+        {path: "/characters", view: CharactersView}
     ]
 //2 match function
     const potentialMatches = routes.map( route =>{

@@ -2,11 +2,22 @@
     margin: 0;
     padding: 0;
 }
-
-body{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+#app{
+    /* background-color: #cde8f4; */
 }
+.hero{
+    background-image: url('/static/img/fond.avif');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Luckiest Guy', cursive;
 
+    padding: 100px;
+    color: aliceblue;
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 1.2px;
+}
 nav{
     display: flex;
     flex-direction: row;
@@ -14,36 +25,54 @@ nav{
  
     align-items: center;
     justify-content: center;
-    width: 100%;
-    padding: 50px;
-    font-size: 1.5em;
-    color: aliceblue;
-    background-color: black;
-
+    background-color: rgb(34, 84, 134);
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2em;
+    padding: 10px;
     gap: 25px;
     margin-bottom: 25px;
     
+    
 }
-a{
-    color: aliceblue;
+nav a{
+    padding: 20px;
+    color: white;
+    letter-spacing: 1.5px;
     text-decoration: none;
     text-align: center;
 }
+
 a:hover{
-    color: red;
+    color: rgb(255, 0, 0);
 }
 
-img{
-    width: 350px;
-}
+
+
 .container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 2em;
+    justify-content: space-around;
+    align-items: center;
 
 }
+.section-acceuil img{
+    width: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
 
+.section-acceuil a{
+    text-decoration: none;
+    color: rgb(0, 0, 162);
+}
+
+.section-acceuil a:hover{
+    color: rgb(162, 0, 0);
+}
 .card{
     display: flex;
     flex-direction: column;
@@ -52,11 +81,36 @@ img{
     width: 350px;
     padding: 50px;
     font-size: 1.5em;
-
-
 }
 
+.card img{
+    /* width: 350px; */
+}
 .card p{
     margin-top: 20px;
     width: 30ch;
+
+}
+h1{
+    font-family: 'Luckiest Guy', cursive;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+ 
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(34, 84, 134);
+  
+   
+    padding: 20px;
+}
+
+footer p{
+    padding: 30px;
+    color: aliceblue;
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 2px;
+    font-size: 1.2em;
 }
