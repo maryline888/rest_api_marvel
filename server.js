@@ -18,7 +18,7 @@ app.get('/', function (req, res) {
     request.get({
         url: url,
         json: true,
-        headers: { 'User-agent': 'request' }
+        headers: { 'User-agent': 'request'}
     }, (err, res, data) => {
         if (err) {
             console.log('Error = ', err);
@@ -26,7 +26,7 @@ app.get('/', function (req, res) {
             console.log('Status code = ', res.statusCode);
         } else {
             const newData = JSON.stringify(data)
-            fs.writeFile(path.join(__dirname, "frontend", "static", "js", "views",'marvel.json'), newData, err => {
+            fs.writeFile(path.join(__dirname, "frontend", "static", "js", "views","characters.json"), newData, err => {
                 if (err) throw err;
                 console.log('File successfully written to marvel.json');
             })
