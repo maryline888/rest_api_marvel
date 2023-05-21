@@ -25,7 +25,6 @@ export default class extends AbstractView {
             let id = element.id
             // console.log(id);
           
-            let charData = element.comics.items;
             // console.log(charData[collectionURI])
 
             let name = element.name;

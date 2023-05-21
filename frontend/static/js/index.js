@@ -28,6 +28,7 @@ const router = async () => {
    // console.log(pathToRegex("/character/:id"))
     const routes = [
         {path: "/", view: Dashboard},
+        {path: "/home", view: Dashboard},
         {path: "/characters", view: CharactersView},
         {path: "/character/:id", view: InfoCharacter}
     ]
