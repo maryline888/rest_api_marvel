@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
     let preHash = ts + API_PRIVATE_KEY + API_PUBLIC_KEY;
     let hash = crypto.createHash('md5').update(preHash).digest("hex");
 
-    const url = `http://gateway.marvel.com/v1/public/characters?ts=${ts}&apikey=${API_PUBLIC_KEY}&hash=${hash}`;
+    const url = `http://gateway.marvel.com/v1/public/characters?ts=${ts}&apikey=${API_PUBLIC_KEY}&hash=${hash}&limit=50`;
     request.get({
         url: url,
         json: true,
