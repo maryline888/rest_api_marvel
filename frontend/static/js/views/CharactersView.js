@@ -17,16 +17,10 @@ export default class extends AbstractView {
         //const qui va chercher les personnages, img et nom seulement 
         const data =  jsonData.data.results;
 
-       
-
         let htmlElements = [];
     
         data.forEach(element => {
             let id = element.id
-            // console.log(id);
-          
-            // console.log(charData[collectionURI])
-
             let name = element.name;
             let path = element.thumbnail.path;
             let ext = element.thumbnail.extension
@@ -43,7 +37,4 @@ export default class extends AbstractView {
 
         return `<section class="container">${htmlElements}</section>`;
     }
-    
-        
-    
 }

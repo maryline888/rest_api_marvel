@@ -2,9 +2,6 @@ import Dashboard from "./views/Dashboard.js"
 import CharactersView from "./views/charactersView.js"
 import InfoCharacter from "./views/InfoCharacter.js"
 
-
-
-
 //10 Regex
 const pathToRegex = path => new RegExp("^" + path.replace(/\//g, "\\/").replace(/:\w+/g, "(.+)") + "$")
 
@@ -19,7 +16,6 @@ const getParams = match => {
     return Object.fromEntries(keys.map((key, i) => {
             return [key, values[i]]
     }))
-    
 }
 
 //1 router
