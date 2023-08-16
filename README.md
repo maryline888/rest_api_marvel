@@ -1,8 +1,8 @@
-# SPA Monopage avec REST & REACT
+# SPA Monopage avec REST
 
 <p float="left">
   <img src="apiMarvelindex.png" width="50%" alt="Page Accueil">
-  <img src="caracDescription.png" width="50%" alt="Pade description personnagess"> 
+  <img src="characDescription.png" width="50%" alt="Pade description personnagess"> 
 </p>
 
 
