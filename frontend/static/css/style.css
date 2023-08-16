@@ -62,9 +62,9 @@ a:hover{
 }
 
  .section-acceuil{
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    align-content:center;
 } 
 
 .section-acceuil a:hover{
@@ -76,14 +76,16 @@ a:hover{
     color: rgb(0, 0, 162);
     
 }
+.card{
+    height:100vh;
+
+}
 
 .card,
 .card-acceuil{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center;  */
-   
     font-size: 1.5em;
 }
 
@@ -123,13 +125,14 @@ footer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
- 
     align-items: center;
     justify-content: center;
     background-color: rgb(34, 84, 134);
-    margin-top: 25px;
-   
     padding: 20px;
+
+    position: fixed;
+    bottom: 0;
+    width: -webkit-fill-available;
 }
 
 footer p{
@@ -150,8 +153,12 @@ footer p{
     
 }
 
+.flexbox div img{
+    width:150px;
+}
+
 .flexBox h2{
-    font-family: sans-serif;
+    font-family: roboto;
     font-size: 2em;
     color: rgb(162, 0, 0);
 
@@ -160,7 +167,7 @@ footer p{
 
 .flexBox h3{
     font-size: 1.5em;
-    font-family: sans-serif;
+    font-family: roboto;
     text-align: left;
     color: rgb(162, 0, 0);
     margin-top: 20px;
@@ -169,14 +176,11 @@ footer p{
 
 .flexBox p{
     font-size: 1.2em;
-    font-family: sans-serif;
+    font-family: roboto;
     color:rgb(34, 84, 134) ;
-    padding-top: 15px;
     max-width: 35ch;
-    text-align: left;
-    margin-top: 10px;
+    text-align: justify;
     margin-bottom: 10px;
-
 }
 
 .flexBox ul{
@@ -194,3 +198,19 @@ footer p{
     flex-direction: column;
     flex-wrap: wrap;
 }
+
+.flex h2{
+    font-size:3em;
+    font-family:roboto;
+    color: rgb(34, 84, 134);
+    text-transform:uppercase;
+    margin-bottom:1.5em;
+
+}
+
+.img-sm{
+    width:333px;
+    margin-bottom:2em;
+}
+
+
