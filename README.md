@@ -1,6 +1,10 @@
 # SPA Monopage avec REST & REACT
 
-![Page d'accueil](apiMarvelindex.png)
+<p float="left">
+  <img src="apiMarvelindex.png" width="50%" alt="Description de l'image 1/">
+  <img src="caracDescription.png" width="50%" alt="Description de l'image 1/"> 
+</p>
+
 
 ## Installation
 
