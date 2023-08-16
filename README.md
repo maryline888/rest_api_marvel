@@ -1,6 +1,6 @@
 # SPA Monopage avec REST
 
-| Image 1 | Image 2 |
+| Page Accueil | Page description personnagess |
 |---------|---------|
 | ![Page Accueil](apiMarvelindex.png) | ![Page description personnagess](characDescription.png) |
 
