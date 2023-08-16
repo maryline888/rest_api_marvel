@@ -1,10 +1,8 @@
 # SPA Monopage avec REST
 
-<p float="left">
-  <img src="apiMarvelindex.png" width="50%" alt="Page Accueil">
-  <img src="characDescription.png" width="50%" alt="Pade description personnagess"> 
-</p>
-
+| Image 1 | Image 2 |
+|---------|---------|
+| ![Page Accueil](apiMarvelindex.png) | ![Page description personnagess](characDescription.png) |
 
 ## Installation
 
