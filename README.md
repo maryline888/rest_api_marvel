@@ -1,4 +1,4 @@
-# SPA Monopage avec REST & REACT
+# SPA Monopage avec REST
 
 <p float="left">
   <img src="apiMarvelindex.png" width="50%" alt="Description de l'image 1/">
