@@ -15,7 +15,7 @@ export default class extends AbstractView {
       
 
         return `
-        <section class="section-acceuil container">
+        <section class="section-acceuil">
             <div class="card-acceuil">
                 <h1>
                 <a href="/characters" data-link >Personnages</a>
