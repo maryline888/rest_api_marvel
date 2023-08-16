@@ -1,4 +1,4 @@
-# SPA Monopage avec REST & REACT
+# SPA Monopage avec REST
 
 ![Page d'accueil](apiMarvelindex.png)
 
