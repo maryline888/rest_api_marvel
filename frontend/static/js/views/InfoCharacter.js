@@ -6,7 +6,6 @@ export default class extends AbstractView {
         this.setTitle('Info Personnages')
     }
 
-
     async getHtml() {
 
         let id = this.params.id;
@@ -23,13 +22,20 @@ export default class extends AbstractView {
         const jsonData = await getData('/static/js/views/characters.json');
 
         const data = jsonData.data.results;
-        // console.log('data', data);
         let personnage = data.find(element => element.id === cleanId)
+
+
+        // Extracting the path and extension from data
+        const { path, extension } = personnage.thumbnail;
 
         let nom = personnage.name;
         let description = personnage.description;
         let comics = personnage.comics.items;
         let series = personnage.series.items;
+        // Creating the full URL
+        const imageUrl = `${path}.${extension}`;
+        console.log(personnage.thumbnail);
+        console.log(personnage);
 
         let listComics = `<div><ul>`
         for (let i in comics) {
@@ -46,15 +52,17 @@ export default class extends AbstractView {
 
         return `<section class="flexBox">
                     <div>
-                        <h2>${nom}</h2>
+                        <img class='img-sm' src=${imageUrl} alt=/>
                         <p>${description}</p>
                     </div>
                     <div class="flex">
+                        <h2>${nom}</h2>
                         <h3>Collection bande dessinées</h3>
                         ${listComics}
                         <h3>Collection films et séries</h3>
                         ${listComicsMovies}
                     </div>
                 </section>`;
+
     }
 }
